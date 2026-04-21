@@ -1,0 +1,9 @@
+C:\Users\harin\Desktop\Projet-SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\bin\Debug\ProjetSecurITMemory.exe.config
+C:\Users\harin\Desktop\Projet-SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\bin\Debug\ProjetSecurITMemory.exe
+C:\Users\harin\Desktop\Projet-SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\bin\Debug\ProjetSecurITMemory.pdb
+C:\Users\harin\Desktop\Projet-SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.csproj.AssemblyReference.cache
+C:\Users\harin\Desktop\Projet-SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.Properties.Resources.resources
+C:\Users\harin\Desktop\Projet-SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.csproj.GenerateResource.cache
+C:\Users\harin\Desktop\Projet-SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.csproj.CoreCompileInputs.cache
+C:\Users\harin\Desktop\Projet-SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.exe
+C:\Users\harin\Desktop\Projet-SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.pdb
