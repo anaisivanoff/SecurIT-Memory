@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-
 namespace ProjetSecurITMemory
 {
     public partial class FormGame : Form
     {
         private int tempsEcoule = 0;
         private List<Button> _boutonsCartes = new List<Button>();
-
+"
         public FormGame()
         {
             InitializeComponent();
