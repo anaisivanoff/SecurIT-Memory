@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\projetsecuritmemory\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|solutionrelative:projetsecuritmemory\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|c:\\users\\anais\\source\\repos\\securit-memory\\projetsecuritmemory\\projetsecuritmemory\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|solutionrelative:projetsecuritmemory\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|c:\\users\\anais\\source\\repos\\securit-memory\\projetsecuritmemory\\projetsecuritmemory\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|solutionrelative:projetsecuritmemory\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|c:\\users\\anais\\source\\repos\\securit-memory\\projetsecuritmemory\\projetsecuritmemory\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|solutionrelative:projetsecuritmemory\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\projetsecuritmemory\\formgame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|solutionrelative:projetsecuritmemory\\formgame.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\projetsecuritmemory\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|solutionrelative:projetsecuritmemory\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\projetsecuritmemory\\models\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|solutionrelative:projetsecuritmemory\\models\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\projetsecuritmemory\\models\\jeumemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D38F6B0E-1D0C-47BF-9662-06DA1426EF57}|ProjetSecurITMemory\\ProjetSecurITMemory.csproj|solutionrelative:projetsecuritmemory\\models\\jeumemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Form1.resx",
+              "RelativeDocumentMoniker": "ProjetSecurITMemory\\Form1.resx",
+              "ToolTip": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Form1.resx",
+              "RelativeToolTip": "ProjetSecurITMemory\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-04-23T10:27:40.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjetSecurITMemory\\Form1.cs",
+              "ToolTip": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Form1.cs [Design]",
+              "RelativeToolTip": "ProjetSecurITMemory\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:38:54.453Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjetSecurITMemory\\Form1.cs",
+              "ToolTip": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Form1.cs",
+              "RelativeToolTip": "ProjetSecurITMemory\\Form1.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAxwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:45:35.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormGame.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\FormGame.Designer.cs",
+              "RelativeDocumentMoniker": "ProjetSecurITMemory\\FormGame.Designer.cs",
+              "ToolTip": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\FormGame.Designer.cs",
+              "RelativeToolTip": "ProjetSecurITMemory\\FormGame.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:38:54.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormGame.cs",
+              "DocumentMoniker": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\FormGame.cs",
+              "RelativeDocumentMoniker": "ProjetSecurITMemory\\FormGame.cs",
+              "ToolTip": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\FormGame.cs",
+              "RelativeToolTip": "ProjetSecurITMemory\\FormGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:38:54.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormGame.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\FormGame.cs",
+              "RelativeDocumentMoniker": "ProjetSecurITMemory\\FormGame.cs",
+              "ToolTip": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\FormGame.cs [Design]",
+              "RelativeToolTip": "ProjetSecurITMemory\\FormGame.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:38:54.448Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Carte.cs",
+              "DocumentMoniker": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Models\\Carte.cs",
+              "RelativeDocumentMoniker": "ProjetSecurITMemory\\Models\\Carte.cs",
+              "ToolTip": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Models\\Carte.cs",
+              "RelativeToolTip": "ProjetSecurITMemory\\Models\\Carte.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:38:54.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JeuMemory.cs",
+              "DocumentMoniker": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Models\\JeuMemory.cs",
+              "RelativeDocumentMoniker": "ProjetSecurITMemory\\Models\\JeuMemory.cs",
+              "ToolTip": "C:\\Users\\anais\\source\\repos\\SecurIT-Memory\\ProjetSecurITMemory\\ProjetSecurITMemory\\Models\\JeuMemory.cs",
+              "RelativeToolTip": "ProjetSecurITMemory\\Models\\JeuMemory.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAqwI4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-22T17:38:54.455Z"
             }
           ]
         }

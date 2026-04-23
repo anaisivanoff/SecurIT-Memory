@@ -44,5 +44,16 @@ namespace ProjetSecurITMemory
             tempsEcoule++;
             lblTemps.Text = $"Temps : {tempsEcoule} s";
         }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+    private void btnPlay_Click(object sender, EventArgs e)
+        {
+            FormGame game = new FormGame();
+            game.Show();   // affiche la fenêtre de jeu
+            this.Hide();   // cache le menu
+        }
+    }

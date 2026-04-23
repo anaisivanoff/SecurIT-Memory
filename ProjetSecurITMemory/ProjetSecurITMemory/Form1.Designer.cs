@@ -71,6 +71,7 @@
             this.btnPlay.TabIndex = 2;
             this.btnPlay.Text = "Jouer";
             this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // btnOptions
             // 

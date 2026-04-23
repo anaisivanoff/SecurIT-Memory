@@ -19,3 +19,14 @@ C:\Users\harin\OneDrive\Documents\ProjetSecurITMemory\ProjetSecurITMemory\obj\De
 C:\Users\harin\OneDrive\Documents\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.exe
 C:\Users\harin\OneDrive\Documents\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.pdb
 C:\Users\harin\OneDrive\Documents\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.FormGame.resources
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\bin\Debug\ProjetSecurITMemory.exe.config
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\bin\Debug\ProjetSecurITMemory.exe
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\bin\Debug\ProjetSecurITMemory.pdb
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.csproj.AssemblyReference.cache
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.Form1.resources
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.FormGame.resources
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.Properties.Resources.resources
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.csproj.GenerateResource.cache
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.csproj.CoreCompileInputs.cache
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.exe
+C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.pdb
