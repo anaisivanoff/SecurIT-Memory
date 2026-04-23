@@ -30,3 +30,4 @@ C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemo
 C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.csproj.CoreCompileInputs.cache
 C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.exe
 C:\Users\anais\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.pdb
+C:\Users\harin\OneDrive\Documents\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\Form1.resources

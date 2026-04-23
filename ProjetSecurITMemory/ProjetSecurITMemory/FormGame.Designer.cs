@@ -2,15 +2,8 @@
 {
     partial class FormGame
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,47 +15,63 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TableLayoutPanel tablePlateau;
-            tablePlateau = new System.Windows.Forms.TableLayoutPanel();
+            this.components = new System.ComponentModel.Container();
+            this.tablePlateau = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTemps = new System.Windows.Forms.Label();
+            this.timerTemps = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // tablePlateau
             // 
-            tablePlateau.ColumnCount = 4;
-            tablePlateau.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tablePlateau.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tablePlateau.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tablePlateau.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tablePlateau.Dock = System.Windows.Forms.DockStyle.Fill;
-            tablePlateau.Location = new System.Drawing.Point(0, 0);
-            tablePlateau.Name = "tablePlateau";
-            tablePlateau.RowCount = 4;
-            tablePlateau.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tablePlateau.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            tablePlateau.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tablePlateau.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            tablePlateau.Size = new System.Drawing.Size(800, 450);
-            tablePlateau.TabIndex = 0;
-            tablePlateau.Paint += new System.Windows.Forms.PaintEventHandler(this.tablePlateau_Paint);
+            this.tablePlateau.ColumnCount = 4;
+            this.tablePlateau.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablePlateau.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablePlateau.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablePlateau.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablePlateau.RowCount = 4;
+            this.tablePlateau.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablePlateau.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablePlateau.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablePlateau.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tablePlateau.Location = new System.Drawing.Point(12, 50);
+            this.tablePlateau.Name = "tablePlateau";
+            this.tablePlateau.Size = new System.Drawing.Size(776, 388);
+            this.tablePlateau.TabIndex = 0;
+            // 
+            // lblTemps
+            // 
+            this.lblTemps.AutoSize = true;
+            this.lblTemps.Location = new System.Drawing.Point(12, 15);
+            this.lblTemps.Name = "lblTemps";
+            this.lblTemps.Size = new System.Drawing.Size(73, 15);
+            this.lblTemps.TabIndex = 1;
+            this.lblTemps.Text = "Temps : 0 s";
+            // 
+            // timerTemps
+            // 
+            this.timerTemps.Interval = 1000;
+            this.timerTemps.Tick += new System.EventHandler(this.timerTemps_Tick);
             // 
             // FormGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(tablePlateau);
+            this.Controls.Add(this.lblTemps);
+            this.Controls.Add(this.tablePlateau);
             this.Name = "FormGame";
-            this.Text = "FormGame";
+            this.Text = "SecurIT Memory - Jeu";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TableLayoutPanel tablePlateau;
+        private System.Windows.Forms.Label lblTemps;
+        private System.Windows.Forms.Timer timerTemps;
     }
 }
