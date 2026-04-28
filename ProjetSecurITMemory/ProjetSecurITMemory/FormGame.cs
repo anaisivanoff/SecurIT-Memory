@@ -12,9 +12,16 @@ namespace ProjetSecurITMemory
         private List<Button> _boutonsCartes = new List<Button>();
         private JeuMemory _jeu;
 
+        private Image _imageDos;
+
         public FormGame()
         {
             InitializeComponent();
+
+            // CHEMIN ABSOLU
+            _imageDos = Image.FromFile(
+                @"C:\Users\harin\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\Images\dos.png"
+            );
 
             _jeu = new JeuMemory();
             _jeu.InitialiserJeu(8);
@@ -43,14 +50,10 @@ namespace ProjetSecurITMemory
             tablePlateau.RowStyles.Clear();
 
             for (int c = 0; c < colonnes; c++)
-            {
                 tablePlateau.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f / colonnes));
-            }
 
             for (int r = 0; r < lignes; r++)
-            {
                 tablePlateau.RowStyles.Add(new RowStyle(SizeType.Percent, 100f / lignes));
-            }
 
             _boutonsCartes.Clear();
 
@@ -61,9 +64,7 @@ namespace ProjetSecurITMemory
                     Button btn = new Button();
                     btn.Dock = DockStyle.Fill;
                     btn.Margin = new Padding(5);
-                    btn.Font = new Font(FontFamily.GenericSansSerif, 14, FontStyle.Bold);
-                    btn.Tag = null;
-                    btn.Text = "";
+                    btn.BackgroundImageLayout = ImageLayout.Zoom;
                     btn.Click += BoutonCarte_Click;
 
                     _boutonsCartes.Add(btn);
@@ -122,23 +123,26 @@ namespace ProjetSecurITMemory
                 var btn = _boutonsCartes[i];
                 var carte = _jeu.Cartes[i];
 
+                btn.Text = "";
+                btn.BackColor = Color.White;
+
                 if (carte.Etat == EtatCarte.Cachee)
                 {
-                    btn.Text = "";
+                    btn.BackgroundImage = _imageDos;
+                    btn.BackgroundImageLayout = ImageLayout.Zoom;
                     btn.Enabled = true;
-                    btn.BackColor = SystemColors.Control;
                 }
                 else if (carte.Etat == EtatCarte.Revelee)
                 {
-                    btn.Text = carte.PaireId.ToString();
+                    btn.BackgroundImage = carte.Image;
+                    btn.BackgroundImageLayout = ImageLayout.Zoom;
                     btn.Enabled = true;
-                    btn.BackColor = Color.LightYellow;
                 }
                 else if (carte.Etat == EtatCarte.Trouvee)
                 {
-                    btn.Text = carte.PaireId.ToString();
+                    btn.BackgroundImage = carte.Image;
+                    btn.BackgroundImageLayout = ImageLayout.Zoom;
                     btn.Enabled = false;
-                    btn.BackColor = Color.LightGreen;
                 }
             }
         }
@@ -148,10 +152,10 @@ namespace ProjetSecurITMemory
             tempsEcoule = 0;
             lblTemps.Text = "Temps : 0 s";
 
-            _jeu.Reinitialiser(8);      // pour l’instant 8 paires, on branchera sur les Options plus tard
+            _jeu.Reinitialiser(8);
             timerTemps.Enabled = true;
 
-            InitialiserPlateau(4, 4);   // même grille 4x4 pour l’instant
+            InitialiserPlateau(4, 4);
             MettreAJourAffichageCartes();
         }
 

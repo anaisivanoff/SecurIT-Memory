@@ -92,5 +92,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\dos.png" />
+    <Content Include="Images\icone_1.png" />
+    <Content Include="Images\icone_2.png" />
+    <Content Include="Images\icone_3.png" />
+    <Content Include="Images\icone_4.png" />
+    <Content Include="Images\icone_5.png" />
+    <Content Include="Images\icone_6.png" />
+    <Content Include="Images\icone_7.png" />
+    <Content Include="Images\icone_8.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
