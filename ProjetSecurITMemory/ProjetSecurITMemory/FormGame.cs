@@ -142,5 +142,27 @@ namespace ProjetSecurITMemory
                 }
             }
         }
+
+        private void btnRejouer_Click(object sender, EventArgs e)
+        {
+            tempsEcoule = 0;
+            lblTemps.Text = "Temps : 0 s";
+
+            _jeu.Reinitialiser(8);      // pour l’instant 8 paires, on branchera sur les Options plus tard
+            timerTemps.Enabled = true;
+
+            InitialiserPlateau(4, 4);   // même grille 4x4 pour l’instant
+            MettreAJourAffichageCartes();
+        }
+
+        private void btnQuitter_Click(object sender, EventArgs e)
+        {
+            timerTemps.Enabled = false;
+
+            Form1 menu = new Form1();
+            menu.Show();
+
+            this.Close();
+        }
     }
 }

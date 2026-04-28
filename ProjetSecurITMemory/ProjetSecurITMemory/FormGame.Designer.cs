@@ -21,6 +21,8 @@
             this.tablePlateau = new System.Windows.Forms.TableLayoutPanel();
             this.lblTemps = new System.Windows.Forms.Label();
             this.timerTemps = new System.Windows.Forms.Timer(this.components);
+            this.btnRejouer = new System.Windows.Forms.Button();
+            this.btnQuitter = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tablePlateau
@@ -54,11 +56,33 @@
             this.timerTemps.Interval = 1000;
             this.timerTemps.Tick += new System.EventHandler(this.timerTemps_Tick);
             // 
+            // btnRejouer
+            // 
+            this.btnRejouer.Location = new System.Drawing.Point(600, 10);
+            this.btnRejouer.Name = "btnRejouer";
+            this.btnRejouer.Size = new System.Drawing.Size(80, 30);
+            this.btnRejouer.TabIndex = 2;
+            this.btnRejouer.Text = "Rejouer";
+            this.btnRejouer.UseVisualStyleBackColor = true;
+            this.btnRejouer.Click += new System.EventHandler(this.btnRejouer_Click);
+            // 
+            // btnQuitter
+            // 
+            this.btnQuitter.Location = new System.Drawing.Point(690, 10);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(80, 30);
+            this.btnQuitter.TabIndex = 3;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            // 
             // FormGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnQuitter);
+            this.Controls.Add(this.btnRejouer);
             this.Controls.Add(this.lblTemps);
             this.Controls.Add(this.tablePlateau);
             this.Name = "FormGame";
@@ -73,5 +97,7 @@
         private System.Windows.Forms.TableLayoutPanel tablePlateau;
         private System.Windows.Forms.Label lblTemps;
         private System.Windows.Forms.Timer timerTemps;
+        private System.Windows.Forms.Button btnRejouer;
+        private System.Windows.Forms.Button btnQuitter;
     }
 }
