@@ -36,5 +36,11 @@ namespace ProjetSecurITMemory
             game.Show();   // ouvre la fenêtre du jeu
             this.Hide();   // cache le menu (optionnel)
         }
+
+        // Bouton Quitter
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
