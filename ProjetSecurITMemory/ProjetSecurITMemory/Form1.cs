@@ -1,11 +1,12 @@
-﻿using System;
+﻿using ProjetSecurITMemory.Models;
+using System;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace ProjetSecurITMemory
 {
     public partial class Form1 : Form
     {
-        // Chronomètre
         private int secondes = 0;
 
         public Form1()
@@ -13,34 +14,62 @@ namespace ProjetSecurITMemory
             InitializeComponent();
         }
 
-        // Chargement du formulaire
         private void Form1_Load_1(object sender, EventArgs e)
         {
             secondes = 0;
             lblTemps.Text = "Temps : 0 s";
-
-            timer1.Start();   // démarre le timer du menu
+            timer1.Start();
         }
 
-        // Tick du timer du menu
         private void timer1_Tick(object sender, EventArgs e)
         {
             secondes++;
             lblTemps.Text = "Temps : " + secondes + " s";
         }
 
-        // Bouton Jouer
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            FormGame game = new FormGame();
-            game.Show();   // ouvre la fenêtre du jeu
-            this.Hide();   // cache le menu (optionnel)
+            // Lancement direct en mode facile (4x4)
+            GameOptions options = new GameOptions(DifficultyLevel.Facile);
+
+            FormGame game = new FormGame(options);
+            game.Show();
+            this.Hide();
         }
 
-        // Bouton Quitter
+        private void btnOptions_Click(object sender, EventArgs e)
+        {
+            FormOptions opt = new FormOptions();
+
+            if (opt.ShowDialog() == DialogResult.OK)
+            {
+                DifficultyLevel chosen = opt.SelectedDifficulty;
+
+                GameOptions options = new GameOptions(chosen);
+
+                FormGame game = new FormGame(options);
+                game.Show();
+                this.Hide();
+            }
+        }
+
         private void btnQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnOptions_Click_1(object sender, EventArgs e)
+        {
+            FormOptions opt = new FormOptions();
+
+            if (opt.ShowDialog() == DialogResult.OK)
+            {
+                GameOptions options = new GameOptions(opt.SelectedDifficulty);
+
+                FormGame game = new FormGame(options);
+                game.Show();
+                this.Hide();
+            }
         }
     }
 }

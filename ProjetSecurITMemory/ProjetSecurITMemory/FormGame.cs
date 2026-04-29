@@ -1,8 +1,9 @@
-﻿using System;
+﻿using ProjetSecurITMemory.Models;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using ProjetSecurITMemory.Models;
+using System.Xml.Linq;
 
 namespace ProjetSecurITMemory
 {
@@ -13,10 +14,13 @@ namespace ProjetSecurITMemory
         private JeuMemory _jeu;
 
         private Image _imageDos;
+        private readonly GameOptions _options;
 
-        public FormGame()
+        public FormGame(GameOptions options)
         {
             InitializeComponent();
+
+            _options = options;
 
             // CHEMIN ABSOLU
             _imageDos = Image.FromFile(
@@ -24,13 +28,13 @@ namespace ProjetSecurITMemory
             );
 
             _jeu = new JeuMemory();
-            _jeu.InitialiserJeu(8);
+            _jeu.InitialiserJeu(_options.NombrePaires);
 
             tempsEcoule = 0;
             lblTemps.Text = "Temps : 0 s";
             timerTemps.Enabled = true;
 
-            InitialiserPlateau(4, 4);
+            InitialiserPlateau(_options.Lignes, _options.Colonnes);
             MettreAJourAffichageCartes();
         }
 
@@ -129,19 +133,16 @@ namespace ProjetSecurITMemory
                 if (carte.Etat == EtatCarte.Cachee)
                 {
                     btn.BackgroundImage = _imageDos;
-                    btn.BackgroundImageLayout = ImageLayout.Zoom;
                     btn.Enabled = true;
                 }
                 else if (carte.Etat == EtatCarte.Revelee)
                 {
                     btn.BackgroundImage = carte.Image;
-                    btn.BackgroundImageLayout = ImageLayout.Zoom;
                     btn.Enabled = true;
                 }
                 else if (carte.Etat == EtatCarte.Trouvee)
                 {
                     btn.BackgroundImage = carte.Image;
-                    btn.BackgroundImageLayout = ImageLayout.Zoom;
                     btn.Enabled = false;
                 }
             }
@@ -152,10 +153,10 @@ namespace ProjetSecurITMemory
             tempsEcoule = 0;
             lblTemps.Text = "Temps : 0 s";
 
-            _jeu.Reinitialiser(8);
+            _jeu.Reinitialiser(_options.NombrePaires);
             timerTemps.Enabled = true;
 
-            InitialiserPlateau(4, 4);
+            InitialiserPlateau(_options.Lignes, _options.Colonnes);
             MettreAJourAffichageCartes();
         }
 

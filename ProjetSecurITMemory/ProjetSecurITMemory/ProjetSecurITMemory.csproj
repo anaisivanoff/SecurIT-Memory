@@ -60,7 +60,15 @@
     <Compile Include="FormGame.Designer.cs">
       <DependentUpon>FormGame.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOptions.Designer.cs">
+      <DependentUpon>FormOptions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Carte.cs" />
+    <Compile Include="Models\DifficultyLevel.cs" />
+    <Compile Include="Models\GameOptions.cs" />
     <Compile Include="Models\JeuMemory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGame.resx">
       <DependentUpon>FormGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOptions.resx">
+      <DependentUpon>FormOptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -95,7 +106,17 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Images\dos.png" />
+    <Content Include="Images\icone_0.png" />
     <Content Include="Images\icone_1.png" />
+    <Content Include="Images\icone_10.png" />
+    <Content Include="Images\icone_11.png" />
+    <Content Include="Images\icone_12.png" />
+    <Content Include="Images\icone_13.png" />
+    <Content Include="Images\icone_14.png" />
+    <Content Include="Images\icone_15.png" />
+    <Content Include="Images\icone_16.png" />
+    <Content Include="Images\icone_17.png" />
+    <Content Include="Images\icone_18.png" />
     <Content Include="Images\icone_2.png" />
     <Content Include="Images\icone_3.png" />
     <Content Include="Images\icone_4.png" />
@@ -103,6 +124,7 @@
     <Content Include="Images\icone_6.png" />
     <Content Include="Images\icone_7.png" />
     <Content Include="Images\icone_8.png" />
+    <Content Include="Images\icone_9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

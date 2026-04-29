@@ -29,9 +29,10 @@
             // lblTemps
             // 
             this.lblTemps.AutoSize = true;
-            this.lblTemps.Location = new System.Drawing.Point(650, 20);
+            this.lblTemps.Location = new System.Drawing.Point(836, 27);
+            this.lblTemps.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTemps.Name = "lblTemps";
-            this.lblTemps.Size = new System.Drawing.Size(80, 15);
+            this.lblTemps.Size = new System.Drawing.Size(90, 20);
             this.lblTemps.TabIndex = 0;
             this.lblTemps.Text = "Temps : 0 s";
             // 
@@ -43,18 +44,20 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.Location = new System.Drawing.Point(280, 30);
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.Location = new System.Drawing.Point(360, 40);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(210, 32);
+            this.lblTitle.Size = new System.Drawing.Size(296, 48);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "SecurIT Memory";
             // 
             // btnPlay
             // 
-            this.btnPlay.Location = new System.Drawing.Point(330, 120);
+            this.btnPlay.Location = new System.Drawing.Point(424, 160);
+            this.btnPlay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(120, 40);
+            this.btnPlay.Size = new System.Drawing.Size(154, 53);
             this.btnPlay.TabIndex = 2;
             this.btnPlay.Text = "Jouer";
             this.btnPlay.UseVisualStyleBackColor = true;
@@ -62,18 +65,21 @@
             // 
             // btnOptions
             // 
-            this.btnOptions.Location = new System.Drawing.Point(330, 180);
+            this.btnOptions.Location = new System.Drawing.Point(424, 240);
+            this.btnOptions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOptions.Name = "btnOptions";
-            this.btnOptions.Size = new System.Drawing.Size(120, 40);
+            this.btnOptions.Size = new System.Drawing.Size(154, 53);
             this.btnOptions.TabIndex = 3;
             this.btnOptions.Text = "Options";
             this.btnOptions.UseVisualStyleBackColor = true;
+            this.btnOptions.Click += new System.EventHandler(this.btnOptions_Click_1);
             // 
             // btnQuit
             // 
-            this.btnQuit.Location = new System.Drawing.Point(330, 240);
+            this.btnQuit.Location = new System.Drawing.Point(424, 320);
+            this.btnQuit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(120, 40);
+            this.btnQuit.Size = new System.Drawing.Size(154, 53);
             this.btnQuit.TabIndex = 4;
             this.btnQuit.Text = "Quitter";
             this.btnQuit.UseVisualStyleBackColor = true;
@@ -81,14 +87,15 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 415);
+            this.ClientSize = new System.Drawing.Size(1044, 553);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnOptions);
             this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblTemps);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "SecurIT Memory - Menu";
             this.Load += new System.EventHandler(this.Form1_Load_1);

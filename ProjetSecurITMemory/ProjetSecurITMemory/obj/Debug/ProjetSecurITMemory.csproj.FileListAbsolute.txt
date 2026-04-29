@@ -9,3 +9,4 @@ C:\Users\harin\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemo
 C:\Users\harin\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.csproj.CoreCompileInputs.cache
 C:\Users\harin\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.exe
 C:\Users\harin\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.pdb
+C:\Users\harin\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\obj\Debug\ProjetSecurITMemory.FormOptions.resources
