@@ -93,9 +93,19 @@
             this.Name = "Form1";
             this.Text = "SecurIT Memory - Menu";
             this.Load += new System.EventHandler(this.Form1_Load_1);
+
+            // ⭐ Centrage automatique des boutons par rapport au titre
+            this.Resize += (s, e) =>
+            {
+                int centerX = lblTitle.Left + (lblTitle.Width / 2) - (btnPlay.Width / 2);
+
+                btnPlay.Left = centerX;
+                btnOptions.Left = centerX;
+                btnQuit.Left = centerX;
+            };
+
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
