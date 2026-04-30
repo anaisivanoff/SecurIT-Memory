@@ -1,7 +1,7 @@
 ﻿using ProjetSecurITMemory.Models;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
-using System.Xml.Linq;
 
 namespace ProjetSecurITMemory
 {
@@ -12,6 +12,37 @@ namespace ProjetSecurITMemory
         public Form1()
         {
             InitializeComponent();
+
+            // Thème Cyber
+            this.BackColor = ColorTranslator.FromHtml("#0A0F1F");
+            this.ForeColor = Color.White;
+            this.Font = new Font("Segoe UI", 11, FontStyle.Bold);
+
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    btn.BackColor = ColorTranslator.FromHtml("#1F6FEB");
+                    btn.ForeColor = Color.White;
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#00E5FF");
+                    btn.FlatAppearance.BorderSize = 2;
+                }
+            }
+
+            lblTemps.ForeColor = Color.White;
+
+            // ⭐ Centrage automatique du titre au démarrage
+            this.Load += (s, e) =>
+            {
+                lblTitle.Left = (this.ClientSize.Width - lblTitle.Width) / 2;
+            };
+
+            // ⭐ Centrage automatique si la fenêtre change de taille
+            this.Resize += (s, e) =>
+            {
+                lblTitle.Left = (this.ClientSize.Width - lblTitle.Width) / 2;
+            };
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
@@ -29,9 +60,7 @@ namespace ProjetSecurITMemory
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            // Lancement direct en mode facile (4x4)
             GameOptions options = new GameOptions(DifficultyLevel.Facile);
-
             FormGame game = new FormGame(options);
             game.Show();
             this.Hide();
@@ -43,9 +72,13 @@ namespace ProjetSecurITMemory
 
             if (opt.ShowDialog() == DialogResult.OK)
             {
-                DifficultyLevel chosen = opt.SelectedDifficulty;
-
-                GameOptions options = new GameOptions(chosen);
+                GameOptions options = new GameOptions(opt.SelectedDifficulty)
+                {
+                    ModeMemoireInversee = opt.SelectedModeMemoireInversee,
+                    ModeChronometre = opt.SelectedModeChronometre,
+                    ModeHardcore = opt.SelectedModeHardcore,
+                    ErreursMax = opt.SelectedErreursMax
+                };
 
                 FormGame game = new FormGame(options);
                 game.Show();
@@ -56,20 +89,6 @@ namespace ProjetSecurITMemory
         private void btnQuit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void btnOptions_Click_1(object sender, EventArgs e)
-        {
-            FormOptions opt = new FormOptions();
-
-            if (opt.ShowDialog() == DialogResult.OK)
-            {
-                GameOptions options = new GameOptions(opt.SelectedDifficulty);
-
-                FormGame game = new FormGame(options);
-                game.Show();
-                this.Hide();
-            }
         }
     }
 }

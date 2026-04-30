@@ -13,8 +13,11 @@ namespace ProjetSecurITMemory.Models
     {
         public int PaireId { get; private set; }
         public string NomImage { get; private set; }
+
+        // 🔹 IMPORTANT : set public pour éviter les vagues dans FormGame
+        public EtatCarte Etat { get; set; }
+
         public Image Image { get; private set; }
-        public EtatCarte Etat { get; private set; }
 
         public Carte(int paireId, string nomImage)
         {
@@ -22,15 +25,27 @@ namespace ProjetSecurITMemory.Models
             NomImage = nomImage;
 
             // CHEMIN ABSOLU (ton dossier exact)
-            string chemin = $@"C:\Users\harin\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\Images\{nomImage}.png";
+            string chemin =
+                $@"C:\Users\harin\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\Images\{nomImage}.png";
 
             Image = Image.FromFile(chemin);
 
             Etat = EtatCarte.Cachee;
         }
 
-        public void Reveler() => Etat = EtatCarte.Revelee;
-        public void Cacher() => Etat = EtatCarte.Cachee;
-        public void MarquerTrouvee() => Etat = EtatCarte.Trouvee;
+        public void Reveler()
+        {
+            Etat = EtatCarte.Revelee;
+        }
+
+        public void Cacher()
+        {
+            Etat = EtatCarte.Cachee;
+        }
+
+        public void MarquerTrouvee()
+        {
+            Etat = EtatCarte.Trouvee;
+        }
     }
 }
