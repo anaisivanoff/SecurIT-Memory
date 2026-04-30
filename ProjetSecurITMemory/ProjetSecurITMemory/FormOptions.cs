@@ -9,17 +9,14 @@ namespace ProjetSecurITMemory
     {
         public DifficultyLevel SelectedDifficulty { get; private set; }
 
-        // 🔹 Nouveaux modes
         public bool SelectedModeMemoireInversee { get; private set; }
         public bool SelectedModeChronometre { get; private set; }
         public bool SelectedModeHardcore { get; private set; }
-        public int SelectedErreursMax { get; private set; }
 
         public FormOptions()
         {
             InitializeComponent();
 
-            // Thème Cyber
             this.BackColor = ColorTranslator.FromHtml("#0A0F1F");
             this.ForeColor = Color.White;
             this.Font = new Font("Segoe UI", 11, FontStyle.Bold);
@@ -34,11 +31,13 @@ namespace ProjetSecurITMemory
             btnValider.FlatAppearance.BorderSize = 2;
 
             rbFacile.Checked = true;
+
+            lblErreursMax.Visible = false;
+            numErreursMax.Visible = false;
         }
 
         private void btnValider_Click(object sender, EventArgs e)
         {
-            // Difficulté
             if (rbMoyen.Checked)
                 SelectedDifficulty = DifficultyLevel.Moyen;
             else if (rbDifficile.Checked)
@@ -46,11 +45,9 @@ namespace ProjetSecurITMemory
             else
                 SelectedDifficulty = DifficultyLevel.Facile;
 
-            // Modes
             SelectedModeMemoireInversee = chkMemoireInversee.Checked;
             SelectedModeChronometre = chkChronometre.Checked;
             SelectedModeHardcore = chkHardcore.Checked;
-            SelectedErreursMax = (int)numErreursMax.Value;
 
             this.DialogResult = DialogResult.OK;
             this.Close();

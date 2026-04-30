@@ -10,7 +10,6 @@ namespace ProjetSecurITMemory
     {
         private int tempsEcoule = 0;
         private int tempsRestant = 0;
-        private int erreursRestantes = 0;
 
         private List<Button> _boutonsCartes = new List<Button>();
         private JeuMemory _jeu;
@@ -24,7 +23,17 @@ namespace ProjetSecurITMemory
 
             _options = options;
 
-            // Thème Cyber
+            // MODE HARDCORE : 50 paires = 100 cartes, timer 2 min
+            if (_options.ModeHardcore)
+            {
+                _options.NombrePaires = 50;
+                _options.Lignes = 10;
+                _options.Colonnes = 10;
+                _options.ModeChronometre = true;
+                _options.TempsLimite = 120; // 2 minutes
+            }
+
+            // Thème
             this.BackColor = ColorTranslator.FromHtml("#0A0F1F");
             this.ForeColor = Color.White;
             this.Font = new Font("Segoe UI", 11, FontStyle.Bold);
@@ -41,7 +50,6 @@ namespace ProjetSecurITMemory
             btnQuitter.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#00E5FF");
             btnQuitter.FlatAppearance.BorderSize = 2;
 
-            // Chargement image dos
             _imageDos = Image.FromFile(
                 @"C:\Users\harin\source\repos\SecurIT-Memory\ProjetSecurITMemory\ProjetSecurITMemory\Images\dos.png"
             );
@@ -49,7 +57,6 @@ namespace ProjetSecurITMemory
             _jeu = new JeuMemory();
             _jeu.InitialiserJeu(_options.NombrePaires);
 
-            // Chronomètre
             if (_options.ModeChronometre)
             {
                 tempsRestant = _options.TempsLimite;
@@ -60,15 +67,10 @@ namespace ProjetSecurITMemory
                 lblTemps.Text = "Temps : 0 s";
             }
 
-            // Hardcore
-            if (_options.ModeHardcore)
-                erreursRestantes = _options.ErreursMax;
-
             timerTemps.Enabled = true;
 
             InitialiserPlateau(_options.Lignes, _options.Colonnes);
 
-            // Mémoire inversée
             if (_options.ModeMemoireInversee)
                 RevelePuisCache();
             else
@@ -105,7 +107,16 @@ namespace ProjetSecurITMemory
                 {
                     timerTemps.Enabled = false;
                     lblTemps.Text = "Temps restant : 0 s";
-                    MessageBox.Show("Temps écoulé ! Partie perdue.");
+
+                    MessageBox.Show(
+                        _options.ModeHardcore
+                            ? "Temps écoulé ! Le mode Hardcore (100 cartes) est impitoyable."
+                            : "Temps écoulé ! Partie perdue.",
+                        "Défaite",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+
                     _jeu.PartieTerminee = true;
                     return;
                 }
@@ -141,7 +152,7 @@ namespace ProjetSecurITMemory
                 {
                     Button btn = new Button();
                     btn.Dock = DockStyle.Fill;
-                    btn.Margin = new Padding(5);
+                    btn.Margin = new Padding(3);
                     btn.BackgroundImageLayout = ImageLayout.Zoom;
 
                     btn.BackColor = ColorTranslator.FromHtml("#111827");
@@ -171,27 +182,6 @@ namespace ProjetSecurITMemory
 
             if (resultat == ResultatClic.DeuxiemeCarteNonCorrespondante)
             {
-                if (_options.ModeHardcore)
-                {
-                    erreursRestantes--;
-                    if (erreursRestantes <= 0)
-                    {
-                        MessageBox.Show(
-                            "Oups… tu as atteint la limite d’erreurs 😅\n\n" +
-                            "Mais ne lâche rien !\n" +
-                            "Chaque partie te rend plus fort(e).\n" +
-                            "Tu vas y arriver 💪🔥",
-                            "Mode Hardcore - Défaite",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information
-                        );
-
-                        _jeu.PartieTerminee = true;
-                        return;
-                    }
-
-                }
-
                 Timer timerRetard = new Timer();
                 timerRetard.Interval = _options.ModeHardcore ? 500 : 800;
                 timerRetard.Tick += (s, args) =>
@@ -207,7 +197,15 @@ namespace ProjetSecurITMemory
             else if (resultat == ResultatClic.Victoire)
             {
                 timerTemps.Enabled = false;
-                MessageBox.Show($"Bravo ! Vous avez gagné !");
+
+                MessageBox.Show(
+                    _options.ModeHardcore
+                        ? "INCROYABLE ! Tu as terminé le Mode HARDCORE (100 cartes) 🎯🔥"
+                        : "Bravo ! Vous avez gagné !",
+                    "Victoire",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
             }
         }
 

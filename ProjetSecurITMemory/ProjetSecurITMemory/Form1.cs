@@ -77,7 +77,6 @@ namespace ProjetSecurITMemory
                     ModeMemoireInversee = opt.SelectedModeMemoireInversee,
                     ModeChronometre = opt.SelectedModeChronometre,
                     ModeHardcore = opt.SelectedModeHardcore,
-                    ErreursMax = opt.SelectedErreursMax
                 };
 
                 FormGame game = new FormGame(options);

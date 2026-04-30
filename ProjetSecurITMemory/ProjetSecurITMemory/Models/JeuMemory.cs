@@ -25,7 +25,6 @@ namespace ProjetSecurITMemory.Models
         private Carte _premiereCarteRevelee;
         private Carte _deuxiemeCarteRevelee;
 
-        // 🔹 Ajout obligatoire pour FormGame
         public bool BlocageClics { get; set; } = false;
         public bool PartieTerminee { get; set; } = false;
 
@@ -39,7 +38,7 @@ namespace ProjetSecurITMemory.Models
             _premiereCarteRevelee = null;
             _deuxiemeCarteRevelee = null;
 
-            // Création des paires
+            // 🔥 Création des paires (icone_1 → icone_50)
             for (int paireId = 1; paireId <= nombrePaires; paireId++)
             {
                 string nomImage = $"icone_{paireId}";
@@ -61,12 +60,6 @@ namespace ProjetSecurITMemory.Models
                 Cartes[k] = Cartes[n];
                 Cartes[n] = valeur;
             }
-        }
-
-        public void IncrementerTemps()
-        {
-            if (!PartieTerminee)
-                TempsEnSecondes++;
         }
 
         public ResultatClic CliquerSurCarte(int index)
@@ -97,7 +90,6 @@ namespace ProjetSecurITMemory.Models
                 _deuxiemeCarteRevelee = carte;
                 NombreEssais++;
 
-                // Paire trouvée
                 if (_premiereCarteRevelee.PaireId == _deuxiemeCarteRevelee.PaireId)
                 {
                     _premiereCarteRevelee.MarquerTrouvee();
@@ -116,7 +108,6 @@ namespace ProjetSecurITMemory.Models
                 }
                 else
                 {
-                    // Mauvaise paire → blocage
                     BlocageClics = true;
                     return ResultatClic.DeuxiemeCarteNonCorrespondante;
                 }
@@ -148,7 +139,6 @@ namespace ProjetSecurITMemory.Models
             BlocageClics = false;
         }
 
-        // 🔹 Utilisé pour le mode Mémoire inversée
         public void RecacherToutesLesCartes()
         {
             foreach (var carte in Cartes)

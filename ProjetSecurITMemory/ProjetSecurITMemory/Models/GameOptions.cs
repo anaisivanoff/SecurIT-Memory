@@ -7,13 +7,10 @@
         public int Lignes { get; set; }
         public int Colonnes { get; set; }
 
-        // 🔹 Modes
         public bool ModeMemoireInversee { get; set; }
         public bool ModeChronometre { get; set; }
         public bool ModeHardcore { get; set; }
-        public int ErreursMax { get; set; } = 3;
 
-        // 🔹 Temps limite (si mode chronométré)
         public int TempsLimite { get; set; }
 
         public GameOptions(DifficultyLevel difficulty)

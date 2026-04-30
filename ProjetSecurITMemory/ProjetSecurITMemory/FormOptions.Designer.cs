@@ -142,20 +142,25 @@
             this.chkHardcore.AutoSize = true;
             this.chkHardcore.Location = new System.Drawing.Point(20, 90);
             this.chkHardcore.Name = "chkHardcore";
-            this.chkHardcore.Size = new System.Drawing.Size(100, 19);
+            this.chkHardcore.Size = new System.Drawing.Size(160, 19);
             this.chkHardcore.TabIndex = 2;
-            this.chkHardcore.Text = "Hard";
+            this.chkHardcore.Text = "Hardcore (100 cartes)";
             this.chkHardcore.UseVisualStyleBackColor = true;
 
+            // 
             // lblErreursMax
+            // 
             this.lblErreursMax.AutoSize = true;
             this.lblErreursMax.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.lblErreursMax.Location = new System.Drawing.Point(20, 125);
             this.lblErreursMax.Name = "lblErreursMax";
             this.lblErreursMax.TabIndex = 3;
-            this.lblErreursMax.Text = "Erreurs max (Hardcore) :";
+            this.lblErreursMax.Text = "Erreurs max :";
+            this.lblErreursMax.Visible = false;
 
+            // 
             // numErreursMax
+            // 
             this.numErreursMax.Location = new System.Drawing.Point(200, 123);
             this.numErreursMax.Minimum = 1;
             this.numErreursMax.Maximum = 10;
@@ -163,7 +168,7 @@
             this.numErreursMax.Name = "numErreursMax";
             this.numErreursMax.Size = new System.Drawing.Size(50, 23);
             this.numErreursMax.TabIndex = 4;
-
+            this.numErreursMax.Visible = false;
 
             // 
             // btnValider
