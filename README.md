@@ -66,19 +66,3 @@ Modes de difficulté
 - Mode chronomètre : le temps est compté
 
 - Mode hardcore : erreurs limitées
-
-# Structure du projet
-
-/ProjetSecurITMemory
-│
-├── Form1.cs                → Menu principal + fond animé
-├── FormOptions.cs          → Choix des modes et difficultés
-├── FormGame.cs             → Logique du jeu + affichage des cartes
-│
-├── Models/
-│   ├── GameOptions.cs
-│   ├── DifficultyLevel.cs
-│   └── autres classes...
-│
-└── Assets/
-    └── Images des cartes
